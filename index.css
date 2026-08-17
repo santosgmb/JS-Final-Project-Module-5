@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
+/* 
+
+NAV BAR
+
+*/
+
 .nav__bar {
     height: 165px;
     display: flex;
@@ -23,7 +33,100 @@
     justify-content: space-between;
 }
 
+.links {
+    display: flex;
+    width: 100%;
+    max-width: 430px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.link {
+    position: relative;
+    color: #f6c429;
+}
+
 .logo__img {
     height: 75px;
     width: auto;
+}
+
+.btn__contact {
+    display: flex;
+    cursor: pointer;
+    height: 48px;
+    padding: 12px 40px;
+    align-items: center;
+    border: 2px solid #f6c429;
+    border-radius: 50px;
+    background-color: #f6c429;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 350ms ease;
+}
+
+/*
+
+PHONE NAV
+
+*/
+
+#phone__nav {
+    display: none;
+    position: relative;
+}
+
+.bento__menu {
+    width: 27px;
+    height: 27px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: content-box;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.close__btn {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 37px;
+    height: 37px;
+    background-color: transparent;
+    z-index: 2000;
+    cursor: pointer;
+}
+
+.showMenu {
+    transform: translateX(100%);
+    opacity: 0;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 1005;
+    background-color: hsla(0, 0%, 100%, .95);
+    transition: all 400ms ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*
+
+LANDING PAGE
+
+*/  
+
+#landing__page {
+    max-width: 100vw;
+    overflow: hidden;
+    display: flex;
+    flex: 1;
 }
